@@ -95,11 +95,30 @@ A carga, o que vai ser alimentado, o PC, precisaria de um circuito elevador "ste
 Para o carregador, fonte, preciso ser de exatamente 4.2V ou um circuito "step-down".
 Quanto menor a tensão maior a corrente. Quanto maior a corrente maior o desgaste das baterias.
 
-CI para step-up
+
+###### Carregador USB
+
+- [TP4056](https://pt.aliexpress.com/item/1005006043031985.html) - 1A
+
+###### Carregador-Descarregador USB
+- [Modulo Integrado](https://pt.aliexpress.com/item/1005007300134658.html) - 2A
+- [IP2312](https://pt.aliexpress.com/item/1005009039454784.html) - 3A
+- [IP5310](https://pt.aliexpress.com/item/1005005023981835.html) - 3.1A
+
+###### Carregador Step-Down (buck)
+- [Mini360](https://pt.aliexpress.com/item/1005006224672579.html) até 23V-1.8A
+- [LM2596](https://pt.aliexpress.com/item/1005008612869368.html) até 40V-2A
+- [XL4015](https://pt.aliexpress.com/item/1005007481333571.html) até 38V-4.5A
+- [XL4016](https://pt.aliexpress.com/item/1005008520047850.htm) até 40V-9A
+- [XL6019 buck-booster](https://pt.aliexpress.com/item/1005009605546282.html) - até 32V 1.5A
+- [LTC3780 buck-booster](https://pt.aliexpress.com/item/1005004222449701.html) - até 32V 8A
+
+###### Saída 5V - CI para step-up
 - Tps61088 - Operar com tensão minima de 2.7V e até 10A (chaveamento) / 5A (saída prática).
 - 🚫 MT3608 - Operar com tensão mínima de 2.0V e até 4A (chaveamento)/ ~1.5A (saída prática) o que é baixo pois é solicitado 3A.
-- 🚫 Xl6009 - Opera com tensão minima de 3.6V conferido no datasheet, apesar de vendedores dizerem diferente.
-
+- 🚫 [XL6019 Step-UP](https://pt.aliexpress.com/item/1005007129565662.html) 94% 2.5A R$9,89. Exige 1.5V de diferença
+- [LM2577](https://pt.aliexpress.com/item/1005009885861340.html) - Operar com tensão mínima de 3.5V e até 3A
+- 🚫 Xl6009 - Opera com tensão minima de 3.6V conferido no datasheet, apesar de vendedores dizerem diferente. Obsoleto
 
 ##### 6-8.4V(2S)
 
@@ -109,7 +128,10 @@ Olhando os modelos de "step-down" eles normalmente precisam de uma diferença mi
 
 Poderia usar um conversor buck-boost (abaixa e levanta)
 
+###### Carregador / Saídas
+- [XL6019 buck-booster](https://pt.aliexpress.com/item/1005009605546282.html) - até 32V 1.5A
 - [SC8701](https://pt.aliexpress.com/item/1005006174233056.html) 95% 6A, R$62,19 com parafusos
+- [LTC3780 buck-booster](https://pt.aliexpress.com/item/1005004222449701.html) - até 32V 8A
 
 ##### 9-12.6V(3S)
 
@@ -117,11 +139,8 @@ Nesta configuração trabalho com no mínimo do mínimo 7.5v.
 Sendo 2.5V de diferença dos 5V que preciso, uma distancia segura para os step-down funcionar.
 
 - [SC8701](https://pt.aliexpress.com/item/1005006174233056.html) 95% 6A, R$62,19 com parafusos
-
 - [MP1584EN](https://pt.aliexpress.com/item/1005012144215392.html) - 96% 3A R$9,50
-
 - [LM25116](https://pt.aliexpress.com/item/1005004280783154.html) 95,5%, 8A, R$71,19 Necessário mais que 3V
-
 - [XL6019](https://pt.aliexpress.com/item/1005007129565662.html) 94% 2.5A R$9,89
 - XL6009 - obsoleto
 
